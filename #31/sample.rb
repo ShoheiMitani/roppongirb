@@ -3,7 +3,6 @@ class Author < ApplicationRecord
 end
 
 class Book < ApplicationRecord
-  belongs_to :author
 end
 
 author = Author.find(name: "Shoheyhey")
