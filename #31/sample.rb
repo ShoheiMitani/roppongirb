@@ -7,6 +7,4 @@ class Book < ApplicationRecord
 end
 
 author = Author.find(name: "Shoheyhey")
-Book.create!(author: author)
-
-author.books.create!(title: "Hello, World!")
+Book.create!(author: author, title: "Hello, World!")
