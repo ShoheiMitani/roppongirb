@@ -5,5 +5,5 @@ end
 class Book < ApplicationRecord
 end
 
-author = Author.find(name: "Shoheyhey")
+author = Author.find_by(name: "Shoheyhey")
 Book.create!(author: author, title: "Hello, World!")
